@@ -8,7 +8,7 @@
 		 <img alt="user profile pic" class="smallImgs" src="{{ url_for('static', filename='uploads/' + user.image) }}">
           <div class="content">          
                <p class="pagetitle">{{ user.title }}</p>
-			    <p class="card-text"><span class="userprice">{{ user.price }}</span></p>
+			    <p class="card-text"><span class="userprice">${{ user.price }}</span></p>
 					   <p class="card-texts"><span class="typo">{{ user.typeo }}</span></p>
 				    <h4 class="card-title">{{ user.description}}
 				<img alt="icon" src="../static/images/bathroom.png" class="bath"/><div class="userbathroom">{{ user.numofbathroom }} Bathrooms</div><br><br>

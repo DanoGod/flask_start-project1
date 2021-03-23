@@ -13,7 +13,7 @@
                   <div class="card-body">
                      <h4 class="card-title">{{ user.description}}
 					  <p class="card-text"><span class="getloca">{{ user.location }}</span></p>
-					  <p class="card-text"><span class="getprice">{{ user.price }}</span></p>
+					  <p class="card-text"><span class="getprice">${{ user.price }}</span></p>
 					</div>
                    <a href=" {{ url_for('user', user_id=user.id) }}"><input type="button" class="btn" value="View Properties"/></a>
 				
