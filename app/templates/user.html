@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container">
+    
+         <div class="col-sm-4">
+        <div class="prof">
+		 <img alt="user profile pic" class="smallImgs" src="{{ url_for('static', filename='uploads/' + user.image) }}">
+          <div class="content">          
+               <p class="pagetitle">{{ user.title }}</p>
+			    <p class="card-text"><span class="userprice">{{ user.price }}</span></p>
+					   <p class="card-texts"><span class="typo">{{ user.typeo }}</span></p>
+				    <h4 class="card-title">{{ user.description}}
+				<img alt="icon" src="../static/images/bathroom.png" class="bath"/><div class="userbathroom">{{ user.numofbathroom }} Bathrooms</div><br><br>
+                <img alt="icon" src="../static/images/bed.png" class="beds"/><div class="userbed">{{ user.numofbed }} Bedrooms</div><br><br>
+               <img alt="icon" src="../static/images/pin.png" class="loca"/><div class="direction">{{ user.location }}</div><br>
+			    <a href=""><input type="button" class="ebtn" value="Email Retailor"/></a>
+        </div>
+        </div>
+    </div>
+	</div>
+{% endblock %}
